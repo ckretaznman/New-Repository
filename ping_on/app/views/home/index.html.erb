@@ -1,2 +1,18 @@
 <h1>Ping On Restaurant</h1>
-<%= link_to "", posts_path %>
+
+<div style="background-color:green;">
+<p> Hello </p>
+</div>
+
+<div style="background-color:red;">
+<% @food_items.each do |food_item| %>
+
+	<div>
+		<%= food_item.name %>
+		<%= food_item.pint %>
+		<%= food_item.quart %>
+		<%= food_item.rating %>
+	</div>
+
+<% end %>
+</div>
