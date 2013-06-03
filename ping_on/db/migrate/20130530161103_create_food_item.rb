@@ -5,6 +5,12 @@ class CreateFoodItem < ActiveRecord::Migration
   		table.float :pint
   		table.float :quart
   		table.float :rating
+  		t.integer :category
+  	end
+  	
+  	creat_table :categories
+  		t.references :spicy, :sweet, :sour, :salty
+  		t.references :chicken, :beef, :pork, :vegetables, :seafood
   	end
   end
 end
