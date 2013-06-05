@@ -13,6 +13,14 @@
 
 ActiveRecord::Schema.define(:version => 20130530161103) do
 
+  create_table "categories", :force => true do |t|
+  end
+
+  create_table "categories_food_items", :force => true do |t|
+    t.integer "category_id"
+    t.integer "food_item_id"
+  end
+
   create_table "food_items", :force => true do |t|
     t.string "name"
     t.float  "pint"
