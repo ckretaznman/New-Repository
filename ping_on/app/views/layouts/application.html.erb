@@ -9,33 +9,6 @@
 <body>
 <%= yield %>
 </body>
-
-<style>
-.cont1 {
-	width: 75%;
-	height: 300px;
-	position: relative;
-	float: left;
-	background-color: #fff;
-}
-.cont2 {
-	width: 25%;
-	height: 300px;
-	position: relative;
-	float: left;
-	background-color: #eee;
-}
-</style>
-<body>
-	<div class="cont1">
-		<p>Test main body</p>
-	</div>
-		<div class="cont2">
-			<p>Test side bar</p>
-		</div>
-<%= yield %>
-</body>
-
-<%= render :partial => "", :layout => "graybar" %>
-
+<% content_for :sidebar do %>
+<% end %>
 </html>

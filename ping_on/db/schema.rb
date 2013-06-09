@@ -14,6 +14,7 @@
 ActiveRecord::Schema.define(:version => 20130530161103) do
 
   create_table "categories", :force => true do |t|
+    t.string "name"
   end
 
   create_table "categories_food_items", :force => true do |t|
